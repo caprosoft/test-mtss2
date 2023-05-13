@@ -1,7 +1,7 @@
 package elena_michele;
 
 /**
- * Hello world!
+ * Ciao mondo!
  *
  */
 public class App 
