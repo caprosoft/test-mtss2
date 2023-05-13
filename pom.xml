@@ -85,12 +85,12 @@
         <version>3.1.2</version>
         <configuration>
           <failsOnError>true</failsOnError>
-          <configLocation>checkstyle.xml</configLocation>
+          <configLocation>config/checkstyle.xml</configLocation>
           <consoleOutput>true</consoleOutput>
         </configuration>
         <executions>
           <execution>
-            <phase>verify</phase>
+            <phase>verify</phase> <!--fase di mvn in cui viene usato il checkstyle.xml (modificabile)-->
             <goals>
               <goal>checkstyle</goal>
             </goals>
