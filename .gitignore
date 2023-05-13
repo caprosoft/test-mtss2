@@ -9,7 +9,7 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-#IDE stuff's: Eclipse, IntelliJ IDEA & VS Code
+#IDE's stuffs: Eclipse, IntelliJ IDEA & VS Code
 .project
 .classpath
 .idea/
