@@ -73,18 +73,19 @@ public class RomanPrinter {
             for(int a=0; a<romanNumber.length(); a++){
                 if(romanNumber.charAt(a)=='I')
                     System.out.print(stampaI[i]);
-                if(romanNumber.charAt(a)=='V')
+                else if(romanNumber.charAt(a)=='V')
                     System.out.print(stampaV[i]);
-                if(romanNumber.charAt(a)=='X')
+                else if(romanNumber.charAt(a)=='X')
                     System.out.print(stampaX[i]);
-                if(romanNumber.charAt(a)=='L')
+                else if(romanNumber.charAt(a)=='L')
                     System.out.print(stampaL[i]);
-                if(romanNumber.charAt(a)=='C')
+                else if(romanNumber.charAt(a)=='C')
                     System.out.print(stampaC[i]);
-                if(romanNumber.charAt(a)=='D')
+                else if(romanNumber.charAt(a)=='D')
                     System.out.print(stampaD[i]);
-                if(romanNumber.charAt(a)=='M')
+                else if(romanNumber.charAt(a)=='M')
                     System.out.print(stampaM[i]);
+                else{throw new IllegalArgumentException(romanNumber.charAt(a)+" non è un numero romano");}
             }
             System.out.println("");
         }
