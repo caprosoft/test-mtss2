@@ -69,26 +69,27 @@ public class RomanPrinter {
         stampaM[4]="| |  | | ";
         stampaM[5]="|_|  |_| "; 
         
+        String print="";
         for (int i=0;i<6;i++){
             for(int a=0; a<romanNumber.length(); a++){
                 if(romanNumber.charAt(a)=='I')
-                    System.out.print(stampaI[i]);
+                    print+=stampaI[i];
                 else if(romanNumber.charAt(a)=='V')
-                    System.out.print(stampaV[i]);
+                    print+=stampaV[i];
                 else if(romanNumber.charAt(a)=='X')
-                    System.out.print(stampaX[i]);
+                    print+=stampaX[i];
                 else if(romanNumber.charAt(a)=='L')
-                    System.out.print(stampaL[i]);
+                    print+=stampaL[i];
                 else if(romanNumber.charAt(a)=='C')
-                    System.out.print(stampaC[i]);
+                    print+=stampaC[i];
                 else if(romanNumber.charAt(a)=='D')
-                    System.out.print(stampaD[i]);
+                    print+=stampaD[i];
                 else if(romanNumber.charAt(a)=='M')
-                    System.out.print(stampaM[i]);
+                    print+=stampaM[i];
                 else{throw new IllegalArgumentException(romanNumber.charAt(a)+" non è un numero romano");}
             }
-            System.out.println("");
+            print+="\n";
         }
-    return null;
+    return print;
 }
 }
