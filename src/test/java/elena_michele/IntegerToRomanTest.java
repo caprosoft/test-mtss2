@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class IntegerToRomanTest {
 
     @Test
-    public void testConvertI() {
+    public void testConvertOneToRoman() {
         int number = 1;
         String expectedRoman = "I";
         String actualRoman = IntegerToRoman.convert(number);
