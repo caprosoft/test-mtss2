@@ -1,5 +1,5 @@
 # test-mtss2
-[![Maven](https://github.com/caprosoft/test-mtss2.git/actions/workflows/maven.yml/badge.svg)](https://github.com/caprosoft/test-mtss2/actions/workflows/maven.yml) 
+[![Java CI with Maven](https://github.com/caprosoft/test-mtss2/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/caprosoft/test-mtss2/actions/workflows/maven.yml)
 ![coverage](.github/badges/jacoco.svg)
 ![branches_coverage](.github/badges/branches.svg)
 [![Coverage Status](https://coveralls.io/repos/github/caprosoft/test-mtss2/badge.svg?branch=master&service=github)](https://coveralls.io/github/caprosoft/test-mtss2?branch=master)
