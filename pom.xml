@@ -91,7 +91,7 @@
         </configuration>
         <executions>
           <execution>
-            <phase>verify</phase> <!--fase di mvn in cui viene usato il checkstyle.xml (modificabile)-->
+            <phase>package</phase> <!--fase di mvn in cui viene usato il checkstyle.xml, per il progetto è richiesto package-->
             <goals>
               <goal>checkstyle</goal>
             </goals>
