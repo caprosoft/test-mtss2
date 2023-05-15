@@ -16,5 +16,5 @@ public class IntegerToRomanTest {
         String expectedRoman = "I";
         String actualRoman = IntegerToRoman.convert(number);
         assertEquals(expectedRoman, actualRoman);
-    }
+    }   
 }

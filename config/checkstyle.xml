@@ -4,6 +4,25 @@
 
 <module name = "Checker">
 
+  <module name="TreeWalker">
+    <module name="BooleanExpressionComplexity"/>
+    <module name="CyclomaticComplexity">
+      <property name="max" value="30"/>
+      <property name="tokens" value="LITERAL_WHILE, LITERAL_DO"/>
+    </module>
+    <module name="MethodLength"/>
+    <module name="EmptyCatchBlock"/>
+    <module name="AvoidStarImport"/>
+    <module name="IllegalImport"/>
+    <module name="NeedBraces"/>
+  </module>
+
+  <module name="FileLength"/>
+  <module name="LineLength">
+    <property name="max" value="120"/>
+  </module>
+  <module name="FileTabCharacter"/>
+
 	<module name="Header">
         <property name="headerFile" value="config/header.txt"/>
         <property name="fileExtensions" value="java"/>

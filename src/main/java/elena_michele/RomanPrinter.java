@@ -72,20 +72,20 @@ public class RomanPrinter {
         String print="";
         for (int i=0;i<6;i++){
             for(int a=0; a<romanNumber.length(); a++){
-                if(romanNumber.charAt(a)=='I')
-                    print+=stampaI[i];
-                else if(romanNumber.charAt(a)=='V')
-                    print+=stampaV[i];
-                else if(romanNumber.charAt(a)=='X')
-                    print+=stampaX[i];
-                else if(romanNumber.charAt(a)=='L')
-                    print+=stampaL[i];
-                else if(romanNumber.charAt(a)=='C')
-                    print+=stampaC[i];
-                else if(romanNumber.charAt(a)=='D')
-                    print+=stampaD[i];
-                else if(romanNumber.charAt(a)=='M')
-                    print+=stampaM[i];
+                if(romanNumber.charAt(a)=='I'){
+                    print+=stampaI[i];}
+                else if(romanNumber.charAt(a)=='V'){
+                    print+=stampaV[i];}
+                else if(romanNumber.charAt(a)=='X'){
+                    print+=stampaX[i];}
+                else if(romanNumber.charAt(a)=='L'){
+                    print+=stampaL[i];}
+                else if(romanNumber.charAt(a)=='C'){
+                    print+=stampaC[i];}
+                else if(romanNumber.charAt(a)=='D'){
+                    print+=stampaD[i];}
+                else if(romanNumber.charAt(a)=='M'){
+                    print+=stampaM[i];}
                 else{throw new IllegalArgumentException(romanNumber.charAt(a)+" non è un numero romano");}
             }
             print+="\n";
