@@ -19,8 +19,7 @@ public class RomanPrinterTest {
                                 " _| |_  \n"+
                                 "|_____| \n";
         
-        String output = RomanPrinter.print(1);
-        
+        String output = RomanPrinter.print(1);    
         assertEquals(expectedOutput, output);
     }
 }
