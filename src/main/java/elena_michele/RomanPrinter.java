@@ -86,7 +86,7 @@ public class RomanPrinter {
                     print+=stampaD[i];}
                 else if(romanNumber.charAt(a)=='M'){
                     print+=stampaM[i];}
-                else{throw new IllegalArgumentException(romanNumber.charAt(a)+" non è un numero romano");}
+                else{throw new IllegalArgumentException(romanNumber.charAt(a)+" is not a roman number");}
             }
             print+="\n";
         }
