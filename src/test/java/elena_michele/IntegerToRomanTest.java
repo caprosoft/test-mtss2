@@ -66,5 +66,78 @@ public class IntegerToRomanTest {
         assertEquals(expectedRoman, actualRoman);
     }
     
+    @Test
+    public void testConvertTwoToRoman() {
+        int number = 2;
+        String expectedRoman = "II";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+
+    @Test
+    public void testConvertFourToRoman() {
+        int number = 4;
+        String expectedRoman = "IV";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+
+    @Test
+    public void testConvertNineToRoman() {
+        int number = 9;
+        String expectedRoman = "IX";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+
+    @Test
+    public void testConvertFourtyToRoman() {
+        int number = 40;
+        String expectedRoman = "XL";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+
+    @Test
+    public void testConvertNintyToRoman() {
+        int number = 90;
+        String expectedRoman = "XC";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+
+    @Test
+    public void testConvertFourHundredToRoman() {
+        int number = 400;
+        String expectedRoman = "CD";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+
+    @Test
+    public void testConvertNineHundredToRoman() {
+        int number = 900;
+        String expectedRoman = "CM";
+        String actualRoman = IntegerToRoman.convert(number);
+        assertEquals(expectedRoman, actualRoman);
+    }
+/*
+    @Test(expected = java.lang.IllegalArgumentException.class)
+    public void testConvertNumberMajorOneThousandtoRoman(){    
+        int number = 1001;
+        IntegerToRoman.convert(number);
+    }
+
+    @Test(expected = java.lang.IllegalArgumentException.class)
+    public void testConvertNumberMinorOnetoRoman(){
+        int number = 0;
+        IntegerToRoman.convert(number);
+    }
+*/       
+    @Test(expected = java.lang.NumberFormatException.class)
+    public void testConvertStringtoRoman(){
+        IntegerToRoman.convert(Integer.parseInt("em"));
+    }
+
 
 }
