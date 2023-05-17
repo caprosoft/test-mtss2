@@ -139,7 +139,7 @@
           </execution>
         </executions>
       </plugin>
-<!--
+
       <plugin>
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
@@ -152,10 +152,10 @@
           </dependency>
         </dependencies>
         <configuration>
-          <repoToken>${env.COVERALLS_REPO_TOKEN}</repoToken>
+          <repoToken>${env.COVERALLS_TOKEN}</repoToken>
         </configuration>
       </plugin>
--->
+
     </plugins>
 
     <!--//PLUGINS AGGIUNTI DALL'UTENTE-->
